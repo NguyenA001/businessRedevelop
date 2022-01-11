@@ -1,0 +1,31 @@
+.redBack{
+    background-color: #974C5E;
+}
+.brownBack{
+    background-color: #F2EDD9;
+}
+.hoverBrown{
+    background-color: #7E5959;
+}
+.whiteText{
+    color: white;
+}
+.foot{
+    background-color: #974C5E;
+    height: 20vh;
+    width: 100%;
+    position: fixed;
+}
+.padZero{
+    padding-left: 0%;
+    padding-right: 0%;
+}
+.marginPad{
+    margin-right: 10%;
+}
+.nav-link:hover { color: white; }
+
+.navFont{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+}
