@@ -16,7 +16,7 @@
 }
 .foot{
     background-color: #974C5E;
-    height: 25vh;
+    height: auto;
 }
 .padZero{
     padding-left: 5%;
@@ -33,8 +33,4 @@
 }
 .regularFont{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.nav-link:hover{
-    color: white;
 }

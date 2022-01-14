@@ -64,7 +64,7 @@
 
 .grayFoot{
     background-color: #D3D3D3;
-    height: 9vh;
+    height: auto;
 }
 
 .dropdown-menu{
@@ -101,6 +101,11 @@
 }
 .linkNoLines{
     text-decoration: none;
+}
+
+.test{
+    height:90px;
+    width:90px;
 }
 /* .footMargin{
     margin-bottom: 180px;
