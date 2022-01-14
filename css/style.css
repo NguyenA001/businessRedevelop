@@ -10,9 +10,13 @@
 .whiteText{
     color: white;
 }
+.FootText{
+    color: white;
+    font-size: 22px;
+}
 .foot{
     background-color: #974C5E;
-    height: 20vh;
+    height: 25vh;
 }
 .padZero{
     padding-left: 5%;

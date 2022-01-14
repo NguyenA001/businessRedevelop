@@ -19,7 +19,7 @@
   <body>
     <div class="container-fluid">
       <!-- top image -->
-      <div class="row">
+      <div class="row" id="HomeAnchor">
         <div class="col-2"></div>
         <div class="col-8">
           <img
@@ -32,27 +32,64 @@
       </div>
       <!-- nav bar -->
       <div class="row redBack d-flex justify-content-center">
-        <div class="col-2">
+        <div class="col-4">
           <a
-            class="nav-link whiteText d-flex justify-content-center navFont"
+            class="nav-link whiteText text-center navFont"
             href="../index.html"
             >Home</a
           >
         </div>
-        <div class="col-2">
+        <div class="col-4">
           <a
-            class="nav-link whiteText d-flex justify-content-center navFont"
+            class="nav-link whiteText text-center navFont"
             href="appetizers.html"
             >Menu</a
           >
         </div>
-        <div class="col-2">
-          <a class="nav-link whiteText navFont" href="reviews.html"
+        <div class="col-4">
+          <a class="nav-link whiteText text-center navFont " href="reviews.html"
             >Reviews</a
           >
-        </div>
+        </div> 
       </div>
       <!-- body -->
+      <div class="row text-center d-md-none">
+        <div class="col-12">
+          <div class="row brownBack">
+            <div class="col-6 d-flex justify-content-end">
+              <button type="button" class="btn btn-light menuNavColor btn-lg">Appetizers</button>
+            </div>
+            <div class="col-6 d-flex justify-content-start">
+              <button type="button" class="btn btn-light  menuNavColor btn-lg">Desserts</button>
+            </div>
+        </div>
+        
+        <div class="row brownBack">
+          <div class="col-6 d-flex justify-content-end">
+            <button type="button" class="btn btn-light menuNavColor btn-lg">Sides</button>
+          </div>
+          <div class="col-6 d-flex justify-content-start dropdown">
+            <button type="button" class="btn menuNavColor brownBG btn-lg dropdown-toggle mainBtn" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Main Course</button>
+
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#EntreeAnchor2">Entrée</a></li>
+              <li><a class="dropdown-item" href="#GrillAnchor2">Grill</a></li>
+              <li><a class="dropdown-item" href="#NoodlesAnchor2">Noodles and Rice</a></li>
+              <li><a class="dropdown-item" href="#CurryAnchor2">Curry Dishes</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row brownBack">
+          <div class="col-6 d-flex justify-content-end">
+            <button type="button" class="btn btn-light menuNavColor btn-lg">Drinks</button>
+          </div>
+          <div class="col-6">
+            
+          </div>
+        </div>
+      </div>
+      </div>
+      <!-- PHONE NAVIGATION-->
       <div class="d-none d-sm-block">
       <div
         class="row brownBack menuNavFont d-flex justify-content-center border"
@@ -65,7 +102,7 @@
             Appetizers
           </a>
         </div>
-        <div class="col dropdown">
+        <div class="col">
           <a
             class="nav-link d-flex justify-content-center menuNavColor"
             href="./mainCourse.html"
@@ -96,9 +133,45 @@
         </div>
       </div>
       </div>
+      <div class="d-none d-sm-block">
+      <div
+        class="row brownBack menuNavFont2 d-flex justify-content-center border brownBGSECOND"
+      >
+        <div class="col">
+          <a
+            class="nav-link d-flex justify-content-center menuNavColor"
+            href="#EntreeAnchor"
+          >
+          <div class=" text-center">Entrée</div>
+          </a>
+        </div>
+        <div class="col">
+          <a
+            class="nav-link d-flex justify-content-center menuNavColor"
+            href="#GrillAnchor"
+          >
+            <div class=" text-center">Grill</div></a
+          >
+        </div>
+        <div class="col">
+          <a
+            class="nav-link d-flex justify-content-center menuNavColor"
+            href="#NoodlesAnchor"
+            ><div class=" text-center">Noodles and Rice</div></a
+          >
+        </div>
+        <div class="col">
+          <a
+            class="nav-link d-flex justify-content-center menuNavColor"
+            href="#CurryAnchor"
+            ><div class=" text-center">Curry Dishes</div></a
+          >
+        </div>
+      </div>
+      </div>
       <!-- Menu Nav -->
       <div class="row brownBack">
-        <div class="col-6 padZero">
+        <div class="col-6 padZero d-none d-sm-block">
           <input
             class="mt-3"
             type="text"
@@ -106,18 +179,32 @@
             size="45"
           />
       </div>
+      </div>
       <div class="row brownBack">
+        <div class="padZero d-md-none"><hr></div>
         <div class="col-12">
-          <p class="text-center header">Entrée</p>
+          <p id="EntreeAnchor" class="text-center header d-none d-md-block">Entrée</p>
+          <p id="EntreeAnchor2" class="text-center headerSMALL d-sm-block d-md-block d-md-none">Entrée</p>
         </div>
         <div class="padZero"><hr /></div>
       </div>
+      <div class="row text-center d-md-none brownBack">
+        <div class="col-12 mb-5 phoneInput">
+          <input
+            class="mt-3"
+            type="text"
+            placeholder="Search for items..."
+            size="15"
+          />
+      </div>
+      </div>
       <!-- Header -->
       <div class="row padZero brownBack footMargin">
-        <div class="col-6">
+        <div class="col-sm-12 col-md-6">
           <div class="row">
             <div class="col-12">
               <div class="row">
+                <div class="col-1"></div>
                 <div class="col-8">
                   <p>
                     <b> E1) Fish Taco </b><br />
@@ -125,7 +212,7 @@
                     tomato, cabbage and avocado.
                   </p>
                 </div>
-                <div class="col-4">
+                <div class="col-1">
                   <p><b> $12.95 </b></p>
                 </div>
               </div>
@@ -134,6 +221,7 @@
           <div class="row">
             <div class="col-12">
               <div class="row">
+                <div class="col-1"></div>
                 <div class="col-8">
                   <p>
                     <b> E2) Orange Chicken </b><br />
@@ -141,7 +229,7 @@
                     carrots and broccoli.
                   </p>
                 </div>
-                <div class="col-4">
+                <div class="col-1">
                   <p><b> $11.50 </b></p>
                 </div>
               </div>
@@ -150,6 +238,7 @@
           <div class="row">
             <div class="col-12">
               <div class="row">
+                <div class="col-1"></div>
                 <div class="col-8">
                   <p>
                     <b> E3) Scallop Pad Prik Pow </b><br />
@@ -157,7 +246,7 @@
                     sautéed basil sauce.
                   </p>
                 </div>
-                <div class="col-4">
+                <div class="col-1">
                   <p><b> $13.95 </b></p>
                 </div>
               </div>
@@ -166,6 +255,7 @@
           <div class="row">
             <div class="col-12">
               <div class="row">
+                <div class="col-1"></div>
                 <div class="col-8">
                   <p>
                     <b> E4) Pad Ka Pow Moo Sub </b><br />
@@ -173,7 +263,7 @@
                     green beans and basil.
                   </p>
                 </div>
-                <div class="col-4">
+                <div class="col-1">
                   <p><b> $11.00 </b></p>
                 </div>
               </div>
@@ -182,6 +272,7 @@
           <div class="row">
             <div class="col-12">
               <div class="row">
+                <div class="col-1"></div>
                 <div class="col-8">
                   <p>
                     <b> E5) Thai Teriyaki Chicken </b><br />
@@ -189,7 +280,7 @@
                     broccoli, carrots and cauliflower.
                   </p>
                 </div>
-                <div class="col-4">
+                <div class="col-1">
                   <p><b> $11.95 </b></p>
                 </div>
               </div>
@@ -198,6 +289,7 @@
           <div class="row">
             <div class="col-12">
               <div class="row">
+                <div class="col-1"></div>
                 <div class="col-8">
                   <p>
                     <b> E6) Cashew Nut </b><br />
@@ -206,7 +298,7 @@
                     or tofu.
                   </p>
                 </div>
-                <div class="col-4">
+                <div class="col-1">
                   <p><b> $10.95 </b></p>
                 </div>
               </div>
@@ -215,6 +307,7 @@
           <div class="row">
             <div class="col-12">
               <div class="row">
+                <div class="col-1"></div>
                 <div class="col-8">
                   <p>
                     <b> E7) Pad Kin Sod </b><br />
@@ -223,7 +316,7 @@
                     tofu.
                   </p>
                 </div>
-                <div class="col-4">
+                <div class="col-1">
                   <p><b> $9.95 </b></p>
                 </div>
               </div>
@@ -232,6 +325,7 @@
           <div class="row">
             <div class="col-12">
               <div class="row">
+                <div class="col-1"></div>
                 <div class="col-8">
                   <p>
                     <b> E8) Pad Ruam Mit </b><br />
@@ -239,7 +333,7 @@
                     Chicken, Beef, pork or tofu.
                   </p>
                 </div>
-                <div class="col-4">
+                <div class="col-1">
                   <p><b> $9.95 </b></p>
                 </div>
               </div>
@@ -248,6 +342,7 @@
           <div class="row">
             <div class="col-12">
               <div class="row">
+                <div class="col-1"></div>
                 <div class="col-8">
                   <p>
                     <b> E9) Jungle Curry </b><br />
@@ -255,7 +350,7 @@
                     with bell peppers, green beans and pumpkin.
                   </p>
                 </div>
-                <div class="col-4">
+                <div class="col-1">
                   <p><b> $15.95 </b></p>
                 </div>
               </div>
@@ -264,6 +359,7 @@
           <div class="row">
             <div class="col-12">
               <div class="row">
+                <div class="col-1"></div>
                 <div class="col-8">
                   <p>
                     <b> E10) Pad Kow Pod On </b><br />
@@ -272,7 +368,7 @@
                     tofu.
                   </p>
                 </div>
-                <div class="col-4">
+                <div class="col-1">
                   <p><b> $10.95 </b></p>
                 </div>
               </div>
@@ -281,6 +377,7 @@
           <div class="row">
             <div class="col-12">
               <div class="row">
+                <div class="col-1"></div>
                 <div class="col-8">
                   <p>
                     <b> E11) Crispy Duck </b><br />
@@ -288,7 +385,7 @@
                     plum sauce.
                   </p>
                 </div>
-                <div class="col-4">
+                <div class="col-1">
                   <p><b> $14.95 </b></p>
                 </div>
               </div>
@@ -297,6 +394,7 @@
           <div class="row">
             <div class="col-12">
               <div class="row">
+                <div class="col-1"></div>
                 <div class="col-8">
                   <p>
                     <b> E12) Kung Pad Pri Pow </b><br />
@@ -304,7 +402,7 @@
                     home made chili sauce and fresh basil.
                   </p>
                 </div>
-                <div class="col-4">
+                <div class="col-1">
                   <p><b> $14.95 </b></p>
                 </div>
               </div>
@@ -313,6 +411,7 @@
           <div class="row">
             <div class="col-12">
               <div class="row">
+                <div class="col-1"></div>
                 <div class="col-8">
                   <p>
                     <b> E13) Tri Tip Pad Ka Pow </b><br />
@@ -320,17 +419,19 @@
                     onion and bell pepper in garlic sauce.
                   </p>
                 </div>
-                <div class="col-4">
+                <div class="col-1">
                   <p><b> $14.95 </b></p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-6">
+        <div class="col-sm-12 col-md-6">
           <div class="row">
             <div class="col-12">
               <div class="row">
+                <div class="col-2 d-none d-md-block"></div>
+                <div class="col-1 d-sm-block d-md-block d-md-none"></div>
                 <div class="col-8">
                   <p>
                     <b> E14) Lobster Tail Pad Prik Pao </b><br />
@@ -338,7 +439,7 @@
                     basil in sweet chili paste.
                   </p>
                 </div>
-                <div class="col-4">
+                <div class="col-1">
                   <p><b> $30.95 </b></p>
                 </div>
               </div>
@@ -347,6 +448,8 @@
           <div class="row">
             <div class="col-12">
               <div class="row">
+                <div class="col-2 d-none d-md-block"></div>
+                <div class="col-1 d-sm-block d-md-block d-md-none"></div>
                 <div class="col-8">
                   <p>
                     <b> E15) Chicken Water Chestnut. </b><br />
@@ -354,7 +457,7 @@
                     celery and peanuts in Kung Lao sauce.
                   </p>
                 </div>
-                <div class="col-4">
+                <div class="col-1">
                   <p><b> $11.95 </b></p>
                 </div>
               </div>
@@ -363,6 +466,8 @@
           <div class="row">
             <div class="col-12">
               <div class="row">
+                <div class="col-2 d-none d-md-block"></div>
+                <div class="col-1 d-sm-block d-md-block d-md-none"></div>
                 <div class="col-8">
                   <p>
                     <b> E16) Sea Bass Lad Prik </b><br />
@@ -370,7 +475,7 @@
                     basil. Topped with red curry sauce.
                   </p>
                 </div>
-                <div class="col-4">
+                <div class="col-1">
                   <p><b> $13.95 </b></p>
                 </div>
               </div>
@@ -379,6 +484,8 @@
           <div class="row">
             <div class="col-12">
               <div class="row">
+                <div class="col-2 d-none d-md-block"></div>
+                <div class="col-1 d-sm-block d-md-block d-md-none"></div>
                 <div class="col-8">
                   <p>
                     <b> E17) Khao Soi </b><br />
@@ -387,7 +494,7 @@
                     curry sauce.
                   </p>
                 </div>
-                <div class="col-4">
+                <div class="col-1">
                   <p><b> $11.95 </b></p>
                 </div>
               </div>
@@ -396,6 +503,8 @@
           <div class="row">
             <div class="col-12">
               <div class="row">
+                <div class="col-2 d-none d-md-block"></div>
+                <div class="col-1 d-sm-block d-md-block d-md-none"></div>
                 <div class="col-8">
                   <p>
                     <b> E18) Thai Scampi </b><br />
@@ -403,7 +512,7 @@
                     sauce served in hot iron skillet.
                   </p>
                 </div>
-                <div class="col-4">
+                <div class="col-1">
                   <p><b> $14.95 </b></p>
                 </div>
               </div>
@@ -412,6 +521,8 @@
           <div class="row">
             <div class="col-12">
               <div class="row">
+                <div class="col-2 d-none d-md-block"></div>
+                <div class="col-1 d-sm-block d-md-block d-md-none"></div>
                 <div class="col-8">
                   <p>
                     <b> E19) Sautéed Basil </b><br />
@@ -419,7 +530,7 @@
                     chili garlic sauce. Choice of Chicken, Beef, pork or tofu.
                   </p>
                 </div>
-                <div class="col-4">
+                <div class="col-1">
                   <p><b> $9.95 </b></p>
                 </div>
               </div>
@@ -428,6 +539,8 @@
           <div class="row">
             <div class="col-12">
               <div class="row">
+                <div class="col-2 d-none d-md-block"></div>
+                <div class="col-1 d-sm-block d-md-block d-md-none"></div>
                 <div class="col-8">
                   <p>
                     <b> E20) Spicy Eggplant </b><br />
@@ -436,7 +549,7 @@
                     tofu.
                   </p>
                 </div>
-                <div class="col-4">
+                <div class="col-1">
                   <p><b> $11.95 </b></p>
                 </div>
               </div>
@@ -445,6 +558,8 @@
           <div class="row">
             <div class="col-12">
               <div class="row">
+                <div class="col-2 d-none d-md-block"></div>
+                <div class="col-1 d-sm-block d-md-block d-md-none"></div>
                 <div class="col-8">
                   <p>
                     <b> E21) Pad Prik King </b><br />
@@ -452,7 +567,7 @@
                     carrots. Choice of Chicken, Beef, pork or tofu.
                   </p>
                 </div>
-                <div class="col-4">
+                <div class="col-1">
                   <p><b> $9.95 </b></p>
                 </div>
               </div>
@@ -461,6 +576,8 @@
           <div class="row">
             <div class="col-12">
               <div class="row">
+                <div class="col-2 d-none d-md-block"></div>
+                <div class="col-1 d-sm-block d-md-block d-md-none"></div>
                 <div class="col-8">
                   <p>
                     <b> E22) Pad Prew Wan </b><br />
@@ -469,7 +586,7 @@
                     Chicken, Beef, pork or tofu.
                   </p>
                 </div>
-                <div class="col-4">
+                <div class="col-1">
                   <p><b> $11.50 </b></p>
                 </div>
               </div>
@@ -478,6 +595,8 @@
           <div class="row">
             <div class="col-12">
               <div class="row">
+                <div class="col-2 d-none d-md-block"></div>
+                <div class="col-1 d-sm-block d-md-block d-md-none"></div>
                 <div class="col-8">
                   <p>
                     <b> E23) Chicken Volcano (Gai Pu Khao) </b><br />
@@ -486,7 +605,7 @@
                     your plate.
                   </p>
                 </div>
-                <div class="col-4">
+                <div class="col-1">
                   <p><b> $13.95 </b></p>
                 </div>
               </div>
@@ -495,6 +614,8 @@
           <div class="row">
             <div class="col-12">
               <div class="row">
+                <div class="col-2 d-none d-md-block"></div>
+                <div class="col-1 d-sm-block d-md-block d-md-none"></div>
                 <div class="col-8">
                   <p>
                     <b> E24) Pla Lad Ka Pow </b><br />
@@ -502,7 +623,7 @@
                     sautéed basil sauce.
                   </p>
                 </div>
-                <div class="col-4">
+                <div class="col-1">
                   <p><b> $13.00 </b></p>
                 </div>
               </div>
@@ -511,6 +632,8 @@
           <div class="row">
             <div class="col-12">
               <div class="row">
+                <div class="col-2 d-none d-md-block"></div>
+                <div class="col-1 d-sm-block d-md-block d-md-none"></div>
                 <div class="col-8">
                   <p>
                     <b> E25) Asparagus Delight </b><br />
@@ -518,26 +641,28 @@
                     sautéed in black bean sauce (Seasonal).
                   </p>
                 </div>
-                <div class="col-4">
+                <div class="col-1">
                   <p><b> $14.95 </b></p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <hr />
       </div>
       <div class="row brownBack">
+        <div class="padZero"><hr /></div>
         <div class="col-12">
-          <p class="text-center header">Grill</p>
+          <p id="GrillAnchor"class="text-center header d-none d-md-block">Grill</p>
+          <p id="GrillAnchor2" class="text-center headerSMALL d-sm-block d-md-block d-md-none">Grill</p>
         </div>
         <div class="padZero"><hr /></div>
       </div>
       <div class="row padZero brownBack">
-        <div class="col-6">
+        <div class="col-sm-12 col-md-6">
           <div class="row">
             <div class="col-12">
               <div class="row">
+                <div class="col-1"></div>
                 <div class="col-8">
                   <p>
                     <b> G1) Surf and Turf </b><br />
@@ -545,7 +670,7 @@
                     with mixed veggies.
                   </p>
                 </div>
-                <div class="col-4">
+                <div class="col-1">
                   <p><b> $21.50 </b></p>
                 </div>
               </div>
@@ -554,6 +679,7 @@
           <div class="row">
             <div class="col-12">
               <div class="row">
+                <div class="col-1"></div>
                 <div class="col-8">
                   <p>
                     <b> G2) Thai BBQ Chicken </b><br />
@@ -561,7 +687,7 @@
                     served with green sauce.
                   </p>
                 </div>
-                <div class="col-4">
+                <div class="col-1">
                   <p><b> $12.95 </b></p>
                 </div>
               </div>
@@ -570,6 +696,7 @@
           <div class="row">
             <div class="col-12">
               <div class="row">
+                <div class="col-1"></div>
                 <div class="col-8">
                   <p>
                     <b> G3) Grilled Salmon </b><br />
@@ -577,7 +704,7 @@
                     and vegetables.
                   </p>
                 </div>
-                <div class="col-4">
+                <div class="col-1">
                   <p><b> $14.50 </b></p>
                 </div>
               </div>
@@ -586,6 +713,7 @@
           <div class="row">
             <div class="col-12">
               <div class="row">
+                <div class="col-1"></div>
                 <div class="col-8">
                   <p>
                     <b> G4) Moo Yung </b><br />
@@ -593,7 +721,7 @@
                     Served with Cilantro Lime Sauce.
                   </p>
                 </div>
-                <div class="col-4">
+                <div class="col-1">
                   <p><b> $12.95 </b></p>
                 </div>
               </div>
@@ -602,6 +730,7 @@
           <div class="row">
             <div class="col-12">
               <div class="row">
+                <div class="col-1"></div>
                 <div class="col-8">
                   <p>
                     <b> G5) BBQ Pork Ribs </b><br />
@@ -609,17 +738,19 @@
                     with steam vegetables.
                   </p>
                 </div>
-                <div class="col-4">
+                <div class="col-1">
                   <p><b> $13.95 </b></p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-6">
+        <div class="col-sm-12 col-md-6">
           <div class="row">
             <div class="col-12">
               <div class="row">
+                <div class="col-2 d-none d-md-block"></div>
+                <div class="col-1 d-sm-block d-md-block d-md-none"></div>
                 <div class="col-8">
                   <p>
                     <b> G6) Filet Mignon </b><br />
@@ -627,7 +758,7 @@
                     home made sauce and steamed vegetables.
                   </p>
                 </div>
-                <div class="col-4">
+                <div class="col-1">
                   <p><b> $22.00 </b></p>
                 </div>
               </div>
@@ -636,6 +767,8 @@
           <div class="row">
             <div class="col-12">
               <div class="row">
+                <div class="col-2 d-none d-md-block"></div>
+                <div class="col-1 d-sm-block d-md-block d-md-none"></div>
                 <div class="col-8">
                   <p>
                     <b> G7) Tiger Prawns </b><br />
@@ -643,7 +776,7 @@
                     home made sauce and steamed vegetables.
                   </p>
                 </div>
-                <div class="col-4">
+                <div class="col-1">
                   <p><b> $14.50 </b></p>
                 </div>
               </div>
@@ -652,6 +785,8 @@
           <div class="row">
             <div class="col-12">
               <div class="row">
+                <div class="col-2 d-none d-md-block"></div>
+                <div class="col-1 d-sm-block d-md-block d-md-none"></div>
                 <div class="col-8">
                   <p>
                     <b> G8) Thai Fried Chicken </b><br />
@@ -659,7 +794,7 @@
                     with sweet n' sour sauce.
                   </p>
                 </div>
-                <div class="col-4">
+                <div class="col-1">
                   <p><b> $12.95 </b></p>
                 </div>
               </div>
@@ -668,33 +803,37 @@
           <div class="row">
             <div class="col-12">
               <div class="row">
+                <div class="col-2 d-none d-md-block"></div>
+                <div class="col-1 d-sm-block d-md-block d-md-none"></div>
                 <div class="col-8">
                   <p>
                     <b> G9) New Zealand Lamb </b><br />
                     Lamb rack marinated in a cilantro garlic plum sauce.
                   </p>
                 </div>
-                <div class="col-4">
+                <div class="col-1">
                   <p><b> $18.95 </b></p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <hr />
       </div>
-
+      
       <div class="row brownBack">
+        <div class="padZero"><hr /></div>
         <div class="col-12">
-          <p class="text-center header">Noodles and Rice</p>
+          <p id="NoodlesAnchor"class="text-center header d-none d-md-block">Noodles and Rice</p>
+          <p id="NoodlesAnchor2" class="text-center headerSMALL d-sm-block d-md-block d-md-none">Noodles and Rice</p>
         </div>
         <div class="padZero"><hr /></div>
       </div>
       <div class="row padZero brownBack">
-        <div class="col-6">
+        <div class="col-sm-12 col-md-6">
           <div class="row">
             <div class="col-12">
               <div class="row">
+                <div class="col-1"></div>
                 <div class="col-8">
                   <p>
                     <b> N1) Mango Fried Rice </b><br />
@@ -702,7 +841,7 @@
                     garlic sauce.
                   </p>
                 </div>
-                <div class="col-4">
+                <div class="col-1">
                   <p><b> $12.95 </b></p>
                 </div>
               </div>
@@ -711,6 +850,7 @@
           <div class="row">
             <div class="col-12">
               <div class="row">
+                <div class="col-1"></div>
                 <div class="col-8">
                   <p>
                     <b> N2) Lad Nah </b><br />
@@ -718,7 +858,7 @@
                     gravy sauce. Choice of Chicken, Beef, pork or tofu.
                   </p>
                 </div>
-                <div class="col-4">
+                <div class="col-1">
                   <p><b> $10.95 </b></p>
                 </div>
               </div>
@@ -727,6 +867,7 @@
           <div class="row">
             <div class="col-12">
               <div class="row">
+                <div class="col-1"></div>
                 <div class="col-8">
                   <p>
                     <b> N3) Drunken Noodles (pad kee mow) </b><br />
@@ -735,7 +876,7 @@
                     lettuce. Choice of Chicken, Beef, pork or tofu.
                   </p>
                 </div>
-                <div class="col-4">
+                <div class="col-1">
                   <p><b> $10.95 </b></p>
                 </div>
               </div>
@@ -744,6 +885,7 @@
           <div class="row">
             <div class="col-12">
               <div class="row">
+                <div class="col-1"></div>
                 <div class="col-8">
                   <p>
                     <b> N4) Thai Fried Rice </b><br />
@@ -751,7 +893,7 @@
                     Chicken, beef, pork or tofu and vegetable.
                   </p>
                 </div>
-                <div class="col-4">
+                <div class="col-1">
                   <p><b> $10.50 </b></p>
                 </div>
               </div>
@@ -760,6 +902,7 @@
           <div class="row">
             <div class="col-12">
               <div class="row">
+                <div class="col-1"></div>
                 <div class="col-8">
                   <p>
                     <b> N5) Lobster Fried Rice </b><br />
@@ -767,7 +910,7 @@
                     and carrots and yellow curry.
                   </p>
                 </div>
-                <div class="col-4">
+                <div class="col-1">
                   <p><b> $30.95 </b></p>
                 </div>
               </div>
@@ -776,6 +919,7 @@
           <div class="row">
             <div class="col-12">
               <div class="row">
+                <div class="col-1"></div>
                 <div class="col-8">
                   <p>
                     <b> N6) Thai Chow Mein </b><br />
@@ -783,17 +927,19 @@
                     sprouts, cabbage, onion, mushroom, carrots and celery.
                   </p>
                 </div>
-                <div class="col-4">
+                <div class="col-1">
                   <p><b> $12.95 </b></p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-6">
+        <div class="col-sm-12 col-md-6">
           <div class="row">
             <div class="col-12">
               <div class="row">
+                <div class="col-2 d-none d-md-block"></div>
+                <div class="col-1 d-sm-block d-md-block d-md-none"></div>
                 <div class="col-8">
                   <p>
                     <b> N7) Pad Thai </b><br />
@@ -802,7 +948,7 @@
                     tofu and vegetable.
                   </p>
                 </div>
-                <div class="col-4">
+                <div class="col-1">
                   <p><b> $10.95 </b></p>
                 </div>
               </div>
@@ -811,6 +957,8 @@
           <div class="row">
             <div class="col-12">
               <div class="row">
+                <div class="col-2 d-none d-md-block"></div>
+                <div class="col-1 d-sm-block d-md-block d-md-none"></div>
                 <div class="col-8">
                   <p>
                     <b> N8) Pad See Ew </b><br />
@@ -818,7 +966,7 @@
                     and spicy soy sauce. Choice of Chicken Beef, pork or tofu.
                   </p>
                 </div>
-                <div class="col-4">
+                <div class="col-1">
                   <p><b> $10.95 </b></p>
                 </div>
               </div>
@@ -827,6 +975,8 @@
           <div class="row">
             <div class="col-12">
               <div class="row">
+                <div class="col-2 d-none d-md-block"></div>
+                <div class="col-1 d-sm-block d-md-block d-md-none"></div>
                 <div class="col-8">
                   <p>
                     <b>N9) Pineapple Fried Rice </b><br />
@@ -834,7 +984,7 @@
                     peas and carrots topped with cashews.
                   </p>
                 </div>
-                <div class="col-4">
+                <div class="col-1">
                   <p><b> $13.95 </b></p>
                 </div>
               </div>
@@ -843,6 +993,8 @@
           <div class="row">
             <div class="col-12">
               <div class="row">
+                <div class="col-2 d-none d-md-block"></div>
+                <div class="col-1 d-sm-block d-md-block d-md-none"></div>
                 <div class="col-8">
                   <p>
                     <b> N10) Spicy Fried Rice </b><br />
@@ -850,7 +1002,7 @@
                     basil. Choice of Chicken, Beef, pork or tofu and vegetable.
                   </p>
                 </div>
-                <div class="col-4">
+                <div class="col-1">
                   <p><b> $10.50 </b></p>
                 </div>
               </div>
@@ -859,6 +1011,8 @@
           <div class="row">
             <div class="col-12">
               <div class="row">
+                <div class="col-2 d-none d-md-block"></div>
+                <div class="col-1 d-sm-block d-md-block d-md-none"></div>
                 <div class="col-8">
                   <p>
                     <b> N11) Pad Woon San </b><br />
@@ -867,27 +1021,29 @@
                     garlic sauce.
                   </p>
                 </div>
-                <div class="col-4">
+                <div class="col-1">
                   <p><b> $13.95 </b></p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <hr />
       </div>
-
+      
       <div class="row brownBack">
+        <div class="padZero"><hr /></div>
         <div class="col-12">
-          <p class="text-center header">Curry Dishes</p>
+          <p id="CurryAnchor"class="text-center header d-none d-md-block">Curry Dishes</p>
+          <p id="CurryAnchor2" class="text-center headerSMALL d-sm-block d-md-block d-md-none">Curry Dishes</p>
         </div>
         <div class="padZero"><hr /></div>
       </div>
       <div class="row padZero brownBack">
-        <div class="col-6">
+        <div class="col-sm-12 col-md-6">
           <div class="row">
             <div class="col-12">
               <div class="row">
+                <div class="col-1"></div>
                 <div class="col-8">
                   <p>
                     <b> C1) Evil Jungle Curry </b><br />
@@ -895,7 +1051,7 @@
                     snow peas, carrots, cauliflower and basil.
                   </p>
                 </div>
-                <div class="col-4">
+                <div class="col-1">
                   <p><b> $13.95 </b></p>
                 </div>
               </div>
@@ -904,6 +1060,7 @@
           <div class="row">
             <div class="col-12">
               <div class="row">
+                <div class="col-1"></div>
                 <div class="col-8">
                   <p>
                     <b> C2) Red Curry Duck </b><br />
@@ -911,7 +1068,7 @@
                     tomatoes, onion, bell pepper and basil.
                   </p>
                 </div>
-                <div class="col-4">
+                <div class="col-1">
                   <p><b> $13.95 </b></p>
                 </div>
               </div>
@@ -920,6 +1077,7 @@
           <div class="row">
             <div class="col-12">
               <div class="row">
+                <div class="col-1"></div>
                 <div class="col-8">
                   <p>
                     <b> C3) ChuChee Sea Bass </b><br />
@@ -927,7 +1085,7 @@
                     spinach, fresh pineapple and basil.
                   </p>
                 </div>
-                <div class="col-4">
+                <div class="col-1">
                   <p><b> $14.95 </b></p>
                 </div>
               </div>
@@ -936,6 +1094,7 @@
           <div class="row">
             <div class="col-12">
               <div class="row">
+                <div class="col-1"></div>
                 <div class="col-8">
                   <p>
                     <b> C4) Green Curry </b><br />
@@ -944,7 +1103,7 @@
                     beans and basil leaf.
                   </p>
                 </div>
-                <div class="col-4">
+                <div class="col-1">
                   <p><b> $10.95 </b></p>
                 </div>
               </div>
@@ -953,6 +1112,7 @@
           <div class="row">
             <div class="col-12">
               <div class="row">
+                <div class="col-1"></div>
                 <div class="col-8">
                   <p>
                     <b> C5) Pa Nang </b><br />
@@ -961,7 +1121,7 @@
                     Beef, pork or tofu.
                   </p>
                 </div>
-                <div class="col-4">
+                <div class="col-1">
                   <p><b> $10.00 </b></p>
                 </div>
               </div>
@@ -970,6 +1130,7 @@
           <div class="row">
             <div class="col-12">
               <div class="row">
+                <div class="col-1"></div>
                 <div class="col-8">
                   <p>
                     <b> C6) Mango Chicken Curry </b><br />
@@ -977,17 +1138,19 @@
                     and fresh mango topped with cilantro.
                   </p>
                 </div>
-                <div class="col-4">
+                <div class="col-1">
                   <p><b> $12.95 </b></p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-6">
+        <div class="col-sm-12 col-md-6">
           <div class="row">
             <div class="col-12">
               <div class="row">
+                <div class="col-2 d-none d-md-block"></div>
+                <div class="col-1 d-sm-block d-md-block d-md-none"></div>
                 <div class="col-8">
                   <p>
                     <b> C7) Green Curry Lobster </b><br />
@@ -995,7 +1158,7 @@
                     onion, asparagus and basil.
                   </p>
                 </div>
-                <div class="col-4">
+                <div class="col-1">
                   <p><b> $30.95 </b></p>
                 </div>
               </div>
@@ -1004,6 +1167,8 @@
           <div class="row">
             <div class="col-12">
               <div class="row">
+                <div class="col-2 d-none d-md-block"></div>
+                <div class="col-1 d-sm-block d-md-block d-md-none"></div>
                 <div class="col-8">
                   <p>
                     <b> C8) Mussamun Lamb </b><br />
@@ -1011,7 +1176,7 @@
                     curry sauce.
                   </p>
                 </div>
-                <div class="col-4">
+                <div class="col-1">
                   <p><b> $15.95 </b></p>
                 </div>
               </div>
@@ -1020,6 +1185,8 @@
           <div class="row">
             <div class="col-12">
               <div class="row">
+                <div class="col-2 d-none d-md-block"></div>
+                <div class="col-1 d-sm-block d-md-block d-md-none"></div>
                 <div class="col-8">
                   <p>
                     <b> C9) Yellow Curry </b><br />
@@ -1027,7 +1194,7 @@
                     carrotsnin yellow curry and coconut milk.
                   </p>
                 </div>
-                <div class="col-4">
+                <div class="col-1">
                   <p><b> $10.00 </b></p>
                 </div>
               </div>
@@ -1036,6 +1203,8 @@
           <div class="row">
             <div class="col-12">
               <div class="row">
+                <div class="col-2 d-none d-md-block"></div>
+                <div class="col-1 d-sm-block d-md-block d-md-none"></div>
                 <div class="col-8">
                   <p>
                     <b> C10) Red Curry </b><br />
@@ -1044,7 +1213,7 @@
                     milk.
                   </p>
                 </div>
-                <div class="col-4">
+                <div class="col-1">
                   <p><b> $10.95 </b></p>
                 </div>
               </div>
@@ -1053,6 +1222,8 @@
           <div class="row">
             <div class="col-12">
               <div class="row">
+                <div class="col-2 d-none d-md-block"></div>
+                <div class="col-1 d-sm-block d-md-block d-md-none"></div>
                 <div class="col-8">
                   <p>
                     <b> C11) Massaman Curry </b><br />
@@ -1060,7 +1231,7 @@
                     bell pepper whole peanuts in Masman curry and coconut milk.
                   </p>
                 </div>
-                <div class="col-4">
+                <div class="col-1">
                   <p><b> $10.00 </b></p>
                 </div>
               </div>
@@ -1070,6 +1241,7 @@
       </div>
 
       <div class="row brownBack text-center tipMsg">
+        <div class="padZero d-md-none"><hr></div>
         <div class="col-12">
           <p>15% Gratuity added to groups of six (6) or more <br/> <br/>
 
@@ -1078,18 +1250,43 @@
             All Prices subject to Change</p>
         </div>
       </div>
+
+      <div class="row grayFoot d-sm-block d-md-block d-md-none">
+        <div class="col-12 d-flex justify-content-center ">
+                  <img
+                    src="../images/fb.png"
+                    width="50px"
+                    height="50px"
+                    class=" marginPad mt-3"
+                    alt="facebook logo"
+                  />
+
+                  <img
+                  src="../images/twitter.png"
+                  width="50px"
+                  height="50px"
+                  class="mt-3"
+                  alt="twitter logo"
+                />
+        </div>
+      </div>
       <!-- footer -->
       <div class="row foot relative-bottom">
         <div class="col-12 padZero">
           <div class="row">
-            <div class="col-7 mt-4">
-              <h3 class="whiteText">
+            <div class="col-sm-12 col-md-7 mt-5">
+              <h3 class="whiteText d-none d-md-block">
+                Woodlake Plaza, 2401 W. Turner Road, Suite 224, Lodi <br />
+                Phone (209) 369-8424 • Fax (209) 369-9399 <br />
+                OPEN 11:00 a.m. - 9:00 p.m. / Closed Monday
+              </h3>
+              <h3 class="FootText d-sm-block d-md-block d-md-none">
                 Woodlake Plaza, 2401 W. Turner Road, Suite 224, Lodi <br />
                 Phone (209) 369-8424 • Fax (209) 369-9399 <br />
                 OPEN 11:00 a.m. - 9:00 p.m. / Closed Monday
               </h3>
             </div>
-            <div class="col-5 mt-4">
+            <div class="col-md-5 mt-4 d-none d-md-block">
               <div class="row">
                 <div class="col-12">
                   <h2 class="whiteText text-end">Check us out on</h2>
@@ -1117,6 +1314,15 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-6">
+
+        </div>
+        <div class="col-6 fixedBTT">
+          <a class ="d-flex justify-content-end linkNoLines" href="#HomeAnchor"><button class="btn circleBtn"> <p> <b> Back To <br> Top </b></p></button></a>
         </div>
       </div>
     </div>
